@@ -35,6 +35,7 @@
       ]
     },
     "linux": {
+      "icon": "./src/renderer/assets/icon-menu.png",
       "category": "Development",
       "target": [
         "deb",
