@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <script src="./renderer.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vicit Studio - Start Projects</title>
+  </head>
+  <body>
+    <main>
+      <div class="tabs">
+        <button class="tab active">Local Project</button>
+        <button class="tab">Budget Calc</button>
+      </div>
+      <div class="app active">
+        <div class="group_infor">
+          <label class="group_title">Location directory</label>
+          <div class="breadcrumb">
+            <button id="home_directory_button">
+              <img
+                src="./assets/house.svg"
+                alt="icone home"
+                class="icon"
+                loading="lazy"
+              />
+            </button>
+            <input
+              type="text"
+              id="directory_input"
+              placeholder="~/"
+              readonly
+              disabled
+            />
+          </div>
+          <button class="btn_line" id="browser_directory_button">
+            Browser directory
+          </button>
+        </div>
+        <div class="group_infor">
+          <label class="group_title">Folders result</label>
+          <div class="project">
+            <img
+              src="./assets/folders.svg"
+              alt="icone folder"
+              class="icon"
+              loading="lazy"
+            />
+            <input
+              type="text"
+              id="input_name_dir"
+              placeholder="New project"
+              readonly
+              disabled
+            />
+            <button class="edit" id="btn-edit">
+              <img
+                src="./assets/pencil.svg"
+                alt="icone pencil"
+                loading="lazy"
+              />
+            </button>
+          </div>
+          <ul class="dirs">
+            <li class="folder_item">
+              <div class="flow"></div>
+              ./assets
+            </li>
+            <li class="folder_item">
+              <div class="flow"></div>
+              ./docs
+            </li>
+            <li class="folder_item sub_folder">
+              <div class="flow"></div>
+              ./contract
+            </li>
+            <li class="folder_item sub_folder">
+              <div class="flow"></div>
+              ./invoice
+            </li>
+            <li class="folder_item sub_folder">
+              <div class="flow"></div>
+              ./proposals
+            </li>
+            <li class="folder_item">
+              <div class="flow"></div>
+              ./projects
+            </li>
+          </ul>
+        </div>
+        <button class="create" id="create_button">Create project</button>
+      </div>
+      <div class="app">
+        <div class="form_calc">
+          <div class="values_project">
+            <label>Project value</label>
+            <h4 id="pv">R$ 0,00</h4>
+          </div>
+          <div class="values_project">
+            <label>Service value</label>
+            <h4 id="sv">R$ 0,00</h4>
+          </div>
+          <div class="group_calc">
+            <label>Work days</label
+            ><input
+              type="number"
+              name="workDays"
+              id="workDays"
+              placeholder="0"
+            />
+          </div>
+          <div class="group_calc">
+            <label>Hours value</label
+            ><input
+              type="text"
+              placeholder="R$ 0,00"
+              name="hoursValue"
+              id="hoursValue"
+            />
+          </div>
+          <div class="group_calc">
+            <label>Average hours</label
+            ><input
+              type="number"
+              name="averageHours"
+              id="averageHours"
+              placeholder="0"
+            />
+          </div>
+          <div class="group_calc">
+            <label>Acquisition cost</label
+            ><input type="text" placeholder="R$ 0,00" name="cac" id="cac" />
+          </div>
+          <div class="group_calc">
+            <label>Amount hours</label>
+            <p id="amountHours">0</p>
+          </div>
+          <div class="group_calc">
+            <label>Tax value</label>
+            <p id="taxValue">R$ 0,00</p>
+          </div>
+          <div class="group_calc">
+            <label>Discount on project</label>
+            <p id="dsp">R$ 0,00</p>
+          </div>
+        </div>
+        <button class="calc" id="calc_button">Calc project</button>
+      </div>
+    </main>
+  </body>
+</html>

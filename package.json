@@ -1,0 +1,46 @@
+{
+  "name": "vicit-projects",
+  "version": "1.0.1",
+  "description": "Manager start project model Vicit Studio.",
+  "main": "src/main/main.js",
+  "author": {
+    "name": "Vicit Studio",
+    "email": "vicitstudio@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "./",
+  "scripts": {
+    "dev": "nodemon --watch src --ext js,json,html,css --exec electron .",
+    "start": "electron .",
+    "build-win": "electron-builder --win --x64",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux --x64"
+  },
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "nodemon": "^2.0.22"
+  },
+  "build": {
+    "appId": "vicit-projects",
+    "productName": "Vicit - Project Manager",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "linux": {
+      "category": "Development",
+      "target": [
+        "deb",
+        "pacman",
+        "AppImage"
+      ]
+    }
+  }
+}
