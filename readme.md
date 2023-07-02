@@ -1,4 +1,4 @@
-![screen.png](Untitled%20260a1498b7894ecda8ae7244d67c658b/screen.png)
+![screen.png](build/screen.png)
 
 ## Install
 
