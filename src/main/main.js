@@ -54,7 +54,7 @@ ipcMain.handle("selectDirectory", async (event) => {
   }
 });
 
-ipcMain.handle("createDirectory", async (dirPath, projectName) => {
+ipcMain.handle("createDirectory", async (event, dirPath, projectName) => {
   try {
     const projectPath = path.join(dirPath, projectName);
 
