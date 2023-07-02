@@ -25,14 +25,12 @@
     "appId": "vicit-projects",
     "productName": "Vicit - Project Manager",
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "build/icon.ico"
     },
     "mac": {
       "category": "public.app-category.developer-tools",
-      "target": [
-        "dmg",
-        "zip"
-      ]
+      "icon": "build/icon.png"
     },
     "linux": {
       "category": "Development",
@@ -40,7 +38,8 @@
         "deb",
         "pacman",
         "AppImage"
-      ]
+      ],
+      "icon": "build/icon.png"
     }
   }
 }
