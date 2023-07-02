@@ -10,8 +10,8 @@ const path = require("path");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 400,
-    minWidth: 400,
+    width: 396,
+    minWidth: 396,
     height: 630,
     minHeight: 630,
     icon: path.join(__dirname, "../renderer/assets/icon-menu.png"),

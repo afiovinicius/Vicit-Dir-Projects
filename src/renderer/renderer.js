@@ -17,6 +17,23 @@ document.querySelectorAll(".tabs .tab").forEach((navt, index) => {
   });
 });
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const activeApp = document.querySelector(".app.active");
+
+    if (activeApp) {
+      const activeCreate = activeApp.querySelector("#create_button");
+      const activeCalc = activeApp.querySelector("#calc_button");
+
+      if (activeCreate && !activeCreate.classList.contains("hidden")) {
+        activeCreate.click();
+      } else if (activeCalc && !activeCalc.classList.contains("hidden")) {
+        activeCalc.click();
+      }
+    }
+  }
+});
+
 document
   .getElementById("browser_directory_button")
   .addEventListener("click", async () => {
@@ -85,6 +102,11 @@ document.getElementById("calc_button").addEventListener("click", async () => {
   const VH = document.getElementById("hoursValue").value;
   const HM = document.getElementById("averageHours").value;
   const CAC = document.getElementById("cac").value;
+
+  if (DT === "" || VH === "" || HM === "" || CAC === "") {
+    alert("Por favor, preencha todos os campos obrigatórios.");
+    return;
+  }
 
   var TH = DT * HM;
   var VP = TH * VH;

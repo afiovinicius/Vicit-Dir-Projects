@@ -64,7 +64,7 @@ li {
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -73,14 +73,12 @@ h4 {
 main {
   margin: 0 auto;
   width: fit-content;
-  min-width: 36.4rem;
-  min-height: 56.4rem;
 }
 
 .tabs {
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  width: 30rem;
 }
 
 .tabs .tab {
@@ -276,7 +274,7 @@ main {
   width: 30rem;
   height: fit-content;
   align-items: flex-start;
-  gap: 1.6rem;
+  gap: 1.6rem 0.8rem;
   flex-flow: row wrap;
   overflow: hidden;
 }
@@ -292,6 +290,14 @@ main {
   border-radius: 0.8rem;
   background: var(--gradient);
   color: var(--grey_light);
+}
+
+.form_calc .values_project label,
+.form_calc .values_project h4 {
+  max-width: 12ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .form_calc .group_calc {
