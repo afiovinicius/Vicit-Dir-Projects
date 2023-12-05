@@ -4,7 +4,7 @@ pkgver=1.1.1
 pkgrel=1
 pkgdesc="Manager start project model Vicit Studio."
 arch=('x86_64')
-url="https://github.com/afiovinicius/Vicit-Dir-Projects.git"
+url="https://github.com/afiovinicius/Vicit-Dir-Projects"
 license=('MIT')
 depends=(
   'pacman'
@@ -12,7 +12,7 @@ depends=(
   'electron'
 )
 
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/afiovinicius/Vicit-Dir-Projects.git/archive/v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/afiovinicius/Vicit-Dir-Projects/archive/v${pkgver}.tar.gz")
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

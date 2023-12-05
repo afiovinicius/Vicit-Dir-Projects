@@ -1,0 +1,13 @@
+pkgbase = vicit-projects
+	pkgdesc = Manager start project model Vicit Studio.
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/afiovinicius/Vicit-Dir-Projects
+	arch = x86_64
+	license = MIT
+	depends = pacman
+	depends = git
+	depends = electron
+	source = vicit-projects-1.1.1.tar.gz::https://github.com/afiovinicius/Vicit-Dir-Projects/archive/v1.1.1.tar.gz
+
+pkgname = vicit-projects
