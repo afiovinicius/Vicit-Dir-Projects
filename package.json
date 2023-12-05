@@ -1,6 +1,6 @@
 {
   "name": "vicit-projects",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Manager start project model Vicit Studio.",
   "main": "src/main/main.js",
   "author": {
@@ -8,7 +8,6 @@
     "email": "vicitstudio@gmail.com"
   },
   "license": "MIT",
-  "homepage": "./",
   "scripts": {
     "dev": "nodemon --watch src --ext js,json,html,css --exec electron .",
     "start": "electron .",
@@ -23,7 +22,7 @@
   },
   "build": {
     "appId": "vicit-projects",
-    "productName": "Vicit - Project Manager",
+    "productName": "vicit-projects",
     "win": {
       "target": "nsis",
       "icon": "build/icon.ico"
