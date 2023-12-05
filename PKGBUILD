@@ -26,9 +26,7 @@ build() {
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"/dist
+  cd "$srcdir/Vicit-Dir-Projects-$pkgver/dist"
   sudo pacman -U $pkgname-$pkgver.pacman
-#   makepkg -sic --skippgpcheck
-#   cp -r dist/"$pkgname-$pkgver.pacman" "$pkgdir/opt/$pkgname/"
   chmod +x "$pkgdir/opt/$pkgname/vicit-projects"
 }
