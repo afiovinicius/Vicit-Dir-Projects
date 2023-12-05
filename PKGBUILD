@@ -28,5 +28,4 @@ build() {
 package() {
   cd "$srcdir/Vicit-Dir-Projects-$pkgver/dist"
   sudo pacman -U $pkgname-$pkgver.pacman
-  chmod +x "$pkgdir/opt/$pkgname/vicit-projects"
 }
