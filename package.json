@@ -8,6 +8,7 @@
     "email": "vicitstudio@gmail.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/afiovinicius/Vicit-Dir-Projects",
   "scripts": {
     "dev": "nodemon --watch src --ext js,json,html,css --exec electron .",
     "start": "electron .",

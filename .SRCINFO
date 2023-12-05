@@ -9,5 +9,6 @@ pkgbase = vicit-projects
 	depends = git
 	depends = electron
 	source = vicit-projects-1.1.1.tar.gz::https://github.com/afiovinicius/Vicit-Dir-Projects/archive/v1.1.1.tar.gz
+	sha256sums = SKIP
 
 pkgname = vicit-projects
