@@ -7,15 +7,19 @@ arch=('x86_64')
 url="https://github.com/afiovinicius/Vicit-Dir-Projects"
 license=('MIT')
 depends=(
-  'pacman'
   'git'
   'electron'
+)
+makedepends=(
+  'electron'
+  'yarn'
 )
 
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/afiovinicius/Vicit-Dir-Projects/archive/v${pkgver}.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
+  rm -rf "${srcdir}/${pkgname}-${pkgver}"
   tar xf "${pkgname}-${pkgver}.tar.gz"
 }
 
@@ -27,5 +31,6 @@ build() {
 
 package() {
   cd "$srcdir/Vicit-Dir-Projects-$pkgver/dist"
-  sudo pacman -U $pkgname-$pkgver.pacman
+  install -Dm644 package.json "$pkgdir/usr/share/${pkgname}/package.json"
+  makepkg -fci
 }
