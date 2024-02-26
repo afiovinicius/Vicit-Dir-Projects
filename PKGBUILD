@@ -31,5 +31,5 @@ build() {
 
 package() {
   cd "$srcdir/Vicit-Dir-Projects-$pkgver/dist"
-  makepkg -fci
+  sudo pacman -U $pkgname-$pkgver.pacman
 }
