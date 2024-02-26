@@ -31,6 +31,5 @@ build() {
 
 package() {
   cd "$srcdir/Vicit-Dir-Projects-$pkgver/dist"
-  install -Dm644 package.json "$pkgdir/usr/share/${pkgname}/package.json"
   makepkg -fci
 }
